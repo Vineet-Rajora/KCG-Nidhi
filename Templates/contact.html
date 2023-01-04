@@ -1,0 +1,151 @@
+{% extends "base.html" %}
+{% block title %}Contact Us{% endblock title %}
+
+{% block body %}
+
+<!-- PAGE CONTENT -->
+<div id="page-content">
+			
+    <div id="page-header" class="parallax" data-stellar-background-ratio="0.1" style="background-image:url(static/images/backgrounds/page-header-1.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    
+                    <ol class="breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        
+                        <li class="active">Contact Us</li>
+                    </ol>
+                    
+                </div><!-- col -->
+            </div><!-- row -->
+        </div><!-- container -->
+    </div><!-- page-header -->
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+            
+                <h4>Feel free to write to us.</h4>
+                
+                <br>
+            
+                <form id="contact-form" name="contact-form" method="post" action="mail">
+                    <fieldset>
+
+                        <div id="alert-area"></div>
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                            
+                                <input class="col-xs-12" id="name" type="text" name="name" placeholder="name">
+                            
+                            </div><!-- col -->
+                            <div class="col-sm-6">
+                            
+                                <input class="col-xs-12" id="email" type="email" name="email" placeholder="e-mail">
+                            
+                            </div><!-- col -->
+                        </div><!-- row -->
+                        
+                        <input class="col-xs-12" id="subject" type="text" name="subject" placeholder="subject">
+
+                        <textarea class="col-xs-12" id="cmessage" name="cmessage" rows="9" cols="25" placeholder="message"></textarea>
+
+                        <button class="btn btn-default btn-lg" id="submit" type="submit" name="contact-form" value="">Send</button>
+
+                    </fieldset>
+                </form>
+                
+            </div><!-- col -->
+            <div class="col-sm-4">
+                
+                <h4>Who we are?</h4>
+                
+                <br>
+                
+                <p>KCG India Nidhi Limited, Gurugram, is a Nidhi Company registered under the bearing of the Ministry of Company Affairs. Leading an ambitious team of people, Mr Niranjan Verma, the Founder, has made his vision of providing inclusive and innovative banking solutions for the needs of everyone.</p>
+
+                <p>Please be patient while waiting for response.</p>
+                
+                <br>
+                
+                <h4>Get in touch</h4>
+                
+                <br>
+                
+                <div class="widget widget-contact">
+                    
+                    <ul>
+                        <li>
+                            <i class="materia-icon-location67"></i>
+                            Dynamics Monk, Wz 150/A, Hastsal Rd, Uttam Nagar, New Delhi, Delhi 110059, India
+                        </li>
+                        <li>    
+                            <i class="materia-icon-active5"></i>
+                            +91-9560216464 
+                            
+                        </li>
+                        <li>
+                            <i class="materia-icon-message31"></i>
+                            <a href="mailto:garg.kailashchandra@gmail.com">garg.kailashchandra@gmail.com</a>
+                            
+                        </li>
+                    </ul>
+                    
+                </div><!-- widget-contact -->
+                
+            </div><!-- col -->
+        </div><!-- row -->
+    </div><!-- container -->
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28011.8285046209!2d77.05755751524535!3d28.645386137426627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d0515f8fce8b7%3A0x504f047d457a439!2sDynamics%20Monk!5e0!3m2!1sen!2sus!4v1671792267988!5m2!1sen!2sus" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div><!-- col -->
+        </div><!-- row -->
+    </div><!-- container -->
+    
+    <section class="full-section dark-section parallax" id="section-6" data-stellar-background-ratio="0.1" style="margin-bottom:0;">
+        <div class="full-section-container">
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        
+                        <h2 class="text-center text-uppercase">Subscribe to our newsletter</h2>
+                        
+                    </div><!-- col -->
+                </div><!-- row -->
+            </div><!-- container -->
+            
+            <br>
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-offset-2 col-md-8">
+            
+                        <div class="widget widget-newsletter">
+                            
+                            <form name="newsletter" method="post" action="#">
+                                <fieldset>
+                                    <input id="newsletter-email" type="email" name="email" placeholder="Your email">
+                                    <button class="btn btn-default" type="submit" name="submit" value="">Subscribe</button>
+                                </fieldset>
+                            </form>
+                            
+                            <p class="text-center"></p>
+                            
+                        </div><!-- widget-newsletter -->
+                        
+                    </div><!-- col -->
+                </div><!-- row -->
+            </div><!-- container -->
+            
+        </div><!-- full-section-container -->
+    </section><!-- full-section -->
+    
+</div><!-- PAGE CONTENT -->
+
+{% endblock body %}

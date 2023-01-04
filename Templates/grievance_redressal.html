@@ -1,0 +1,207 @@
+{% extends "base.html" %}
+{% block title %}Grievance Redressal{% endblock title %}
+
+{% block body %}
+
+<!-- PAGE CONTENT -->
+<div id="page-content">
+			
+	<div id="page-header" class="parallax" data-stellar-background-ratio="0.1" style="background-image:url(static/images/backgrounds/page-header-1.jpg);">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					
+					<ol class="breadcrumb">
+						<li><a href="#">Home</a></li>
+						<li class="active">Grievance Redressal</li>
+					</ol>
+					
+				</div><!-- col -->
+			</div><!-- row -->
+		</div><!-- container -->
+	</div><!-- page-header -->
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				
+				<div class="headline text-center">
+					
+					<h2>Grievance <span>Redressal</span></h2>
+					<p>Help us take the necessary corrective action and serve you better</p>
+
+				</div><!-- headline -->
+
+			</div><!-- col -->
+		</div><!-- row -->
+	</div><!-- container -->
+	<section>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="griev">
+						<h2 class="griev-head text-center">Submitting your complaint for the first time?</h2>
+						
+						<div class="row">
+							<div class="col-md-4 col-xs-12">
+								<div class="griev-bx">
+									<div class="row">
+										<div class="col-md-2 col-xs-2">
+											<i class="fa fa-envelope-o"></i>
+										</div>
+										<div class="col-md-10 col-xs-10">
+											<h5>Email us at:</h5>
+											<a href="mailto:contact@jayantindia.com">contact@jayantindia.com</a>
+										</div>
+										<div class="or-div">
+											OR
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-xs-12">
+								<div class="griev-bx">
+									<div class="row">
+										<div class="col-md-2 col-xs-2">
+											<i class="fa fa-envelope-o"></i>
+										</div>
+										<div class="col-md-10 col-xs-10">
+											<h5>Call us at:</h5>
+											<a href="tel:91-9615641564">+91-9615641564</a> / <a href="tel:0124-4006298">0124-4006298</a>
+										</div>
+										<div class="or-div">
+											OR
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-xs-12">
+								<div class="griev-bx">
+									<div class="row">
+										<div class="col-md-2 col-xs-2">
+											<i class="fa fa-envelope-o"></i>
+										</div>
+										<div class="col-md-10 col-xs-10">
+											<h5>You can also contact:</h5>
+											<a>Your Branch Manager Directly</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-12">
+								<h4 class="griev-head1 text-center">OR</h4>
+							</div>
+							
+						</div>
+						<div class="row">
+							<div class="col-md-12 col-xs-12">
+								<div class="griev-boxx">
+									<h4 class="griev-head2 text-center">Fill this form</h4>
+									<p><b>Note: </b>Do not provide any sensitive data in the complaint/inquiry box below, such as Card Number, Pin, CVV, Login ID, Password, etc.</p>
+									<form action="mail" method="POST">
+										<div class="form-group">
+											<label for="griev_rel">Grievance Related To<span>*</span></label>
+											<select name="griev_rel" id="griev_rel" class="form-control" required>
+												<option value="">Select Your Option</option>
+												<option value="Savings Account">Savings Account</option>
+												<option value="Fixed Deposit">Fixed Deposit</option>
+												<option value="Membership">Membership</option>
+												<option value="Share Holding">Share Holding</option>
+												<option value="Loan">Loan</option>
+											</select>
+										</div>
+										<div class="form-group">
+											<label for="griev_complaint">Complaint / Inquiry <span>*</span></label>
+											<textarea name="griev_complaint" id="griev_complaint" cols="30" rows="8" class="form-control" required></textarea>
+										</div>
+										<div class="form-group">
+											<label for="griev_name">Name<span>*</span></label>
+											<input type="text" name="griev_name" id="griev_name" class="form-control" required>
+										</div>
+										<div class="form-group">
+											<label for="griev_address">Address</label>
+											<input type="text" name="griev_address" id="griev_address" maxlength="72" class="form-control">
+										</div>
+										<div class="form-group">
+											<label for="griev_pincode">Pincode</label>
+											<input type="text" name="griev_pincode" id="griev_pincode" maxlength="6" class="form-control">
+										</div>
+										<div class="form-group">
+											<label for="griev_state">State<span>*</span></label>
+											<select class="form-control" name="griev_state" id="griev_state" required>
+												<option class="text-blue" value="">Select State</option>
+												<option class="text-blue" value="Andaman and Nicobar Island">Andaman and Nicobar Island</option>
+												<option class="text-blue" value="Andhra Pradesh">Andhra Pradesh</option>
+												<option class="text-blue" value="Arunachal Pradesh">Arunachal Pradesh</option>
+												<option class="text-blue" value="Assam">Assam</option>
+												<option class="text-blue" value="Bihar">Bihar</option>
+												<option class="text-blue" value="Chandigarh">Chandigarh</option>
+												<option class="text-blue" value="Chhattisgarh">Chhattisgarh</option>
+												<option class="text-blue" value="Dadra &amp; Nagar Haveli">Dadra &amp; Nagar Haveli</option>
+												<option class="text-blue" value="Delhi">Delhi</option>
+												<option class="text-blue" value="Goa">Goa</option>
+												<option class="text-blue" value="Gujarat">Gujarat</option>
+												<option class="text-blue" value="Haryana">Haryana</option>
+												<option class="text-blue" value="Himachal Pradesh">Himachal Pradesh</option>
+												<option class="text-blue" value="Jammu and Kashmir">Jammu and Kashmir</option>
+												<option class="text-blue" value="Jharkhand">Jharkhand</option>
+												<option class="text-blue" value="Karnataka">Karnataka</option>
+												<option class="text-blue" value="Kerala">Kerala</option>
+												<option class="text-blue" value="Madhya Pradesh">Madhya Pradesh</option>
+												<option class="text-blue" value="Maharashtra">Maharashtra</option>
+												<option class="text-blue" value="Manipur">Manipur</option>
+												<option class="text-blue" value="Meghalaya">Meghalaya</option>
+												<option class="text-blue" value="Mizoram">Mizoram</option>
+												<option class="text-blue" value="Nagaland">Nagaland</option>
+												<option class="text-blue" value="NCT of Delhi">NCT of Delhi</option>
+												<option class="text-blue" value="Odisha">Odisha</option>
+												<option class="text-blue" value="Puducherry">Puducherry</option>
+												<option class="text-blue" value="Punjab">Punjab</option>
+												<option class="text-blue" value="Rajasthan">Rajasthan</option>
+												<option class="text-blue" value="Sikkim">Sikkim</option>
+												<option class="text-blue" value="Tamil Nadu">Tamil Nadu</option>
+												<option class="text-blue" value="Telangana">Telangana</option>
+												<option class="text-blue" value="Tripura">Tripura</option>
+												<option class="text-blue" value="Uttar Pradesh">Uttar Pradesh</option>
+												<option class="text-blue" value="Uttarakhand">Uttarakhand</option>
+												<option class="text-blue" value="West Bengal">West Bengal</option>
+											</select>
+										</div>
+										<div class="form-group">
+											<label for="griev_city">City / Town<span>*</span></label>
+											<input type="text" name="griev_city" id="griev_city" class="form-control" required>
+										</div>
+										<div class="form-group">
+											<label for="griev_branch">Nearest Branch</label>
+											<select name="griev_branch" id="griev_branch" class="form-control">
+												<option value="">Select Your Branch</option>
+												<option value="">Branch</option>
+												<option value="">Branch</option>
+											</select>
+										</div>
+										<div class="form-group">
+											<label for="griev_email">Email<span>*</span></label>
+											<input type="email" name="griev_email" id="griev_email" class="form-control" required>
+										</div>
+										<div class="form-group">
+											<label for="griev_mobile">Mobile Number<span>*</span></label>
+											<input type="tel" name="griev_mobile" id="griev_mobile" maxlength="10" class="form-control" required>
+										</div>
+										<div class="form-group">
+											<input type="submit" name="griev_submit" id="griev_submit" value="Submit" class="btn btn-primary form-control">
+										</div>
+									</form>
+								</div>
+								
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+
+</div><!-- PAGE CONTENT -->
+
+{% endblock body %}
